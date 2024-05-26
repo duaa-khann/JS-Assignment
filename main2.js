@@ -1,0 +1,1 @@
+alert('"P\nPI\nPIZ\nPIZZ\nPIZZA ')

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Cost Calculator</title>
+    <script>
+        function calculateTicketCost() {
+            
+            let ticketPrice = 600;
+
+           
+            let numberOfTickets = 5;
+            let totalCost = ticketPrice * numberOfTickets;
+
+            document.getElementById("result").textContent = "Cost of buying " + numberOfTickets + " tickets to a movie is " + totalCost + " PKR.";
+        }
+    </script>
+</head>
+<body onload="calculateTicketCost()">
+    <h1>Movie Ticket Cost Calculator</h1>
+    <p id="result"></p>
+</body>
+</html>

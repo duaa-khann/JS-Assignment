@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marks and Percentage Calculator</title>
+</head>
+<body>
+    <script>
+        
+        let subject1 = prompt("Enter the name of the first subject:");
+        let subject2 = prompt("Enter the name of the second subject:");
+        let subject3 = prompt("Enter the name of the third subject:");
+
+        
+        const totalMarksPerSubject = 100;
+
+        
+        let obtainedMarks1 = parseFloat(prompt("Enter obtained marks for " + subject1 + ":"));
+
+        
+        let obtainedMarks2 = parseFloat(prompt("Enter obtained marks for " + subject2 + ":"));
+        let obtainedMarks3 = parseFloat(prompt("Enter obtained marks for " + subject3 + ":"));
+
+        
+        let totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
+        let totalMaximumMarks = totalMarksPerSubject * 3;
+        let percentage = (totalObtainedMarks / totalMaximumMarks) * 100;
+
+    
+        document.write("<h1>Marks and Percentage</h1>");
+        document.write("<table border='1'>");
+        document.write("<tr><th>Subject</th><th>Obtained Marks</th><th>Total Marks</th></tr>");
+        document.write("<tr><td>" + subject1 + "</td><td>" + obtainedMarks1 + "</td><td>" + totalMarksPerSubject + "</td></tr>");
+        document.write("<tr><td>" + subject2 + "</td><td>" + obtainedMarks2 + "</td><td>" + totalMarksPerSubject + "</td></tr>");
+        document.write("<tr><td>" + subject3 + "</td><td>" + obtainedMarks3 + "</td><td>" + totalMarksPerSubject + "</td></tr>");
+        document.write("<tr><td colspan='2'>Total Obtained Marks</td><td>" + totalObtainedMarks + "</td></tr>");
+        document.write("<tr><td colspan='2'>Percentage</td><td>" + percentage.toFixed(2) + "%</td></tr>");
+        document.write("</table>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h2>Currency Converter</h2>
+    <script>
+        
+        let usdToPKR = 104.80;
+        let sarToPKR = 28;
+
+        let usd = 10;
+        let sar = 25;
+
+        
+        let totalPKR = (usd * usdToPKR) + (sar * sarToPKR);
+
+        
+        document.write("<p>Total amount in Pakistani Rupees: " + totalPKR.toFixed(2) + " PKR</p>");
+    </script>
+</body>
+</html>

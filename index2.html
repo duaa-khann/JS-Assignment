@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Mathematical Expressions</title>
+    <script>
+        function performOperations() {
+        
+            let variable;
+
+            document.getElementById("stepB").textContent = "Value after variable declaration is: " + variable;
+
+            variable = 5;
+
+            document.getElementById("stepD").textContent = "Initial value: " + variable;
+
+            variable++;
+
+          
+            document.getElementById("stepF").textContent = "Value after increment is: " + variable;
+
+            variable += 7;
+
+            
+            document.getElementById("stepH").textContent = "Value after addition is: " + variable;
+
+            
+            variable--;
+
+            
+            document.getElementById("stepJ").textContent = "Value after decrement is: " + variable;
+
+            let remainder = variable % 3;
+            document.getElementById("stepK").textContent = "The remainder is: " + remainder;
+        }
+    </script>
+</head>
+<body onload="performOperations()">
+    <h1>JavaScript Mathematical Expressions</h1>
+    <p id="stepB"></p>
+    <p id="stepD"></p>
+    <p id="stepF"></p>
+    <p id="stepH"></p>
+    <p id="stepJ"></p>
+    <p id="stepK"></p>
+</body>
+</html>

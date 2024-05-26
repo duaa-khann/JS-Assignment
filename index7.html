@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Checkout</title>
+</head>
+<body>
+    <h2>Shopping Cart Checkout</h2>
+    <script>
+    
+        let priceItem1 = 650;
+        let priceItem2 = 100;
+        let quantityItem1 = 3;
+        let quantityItem2 = 7;
+        let shippingCharges = 100;
+
+    
+        let totalCostItem1 = priceItem1 * quantityItem1;
+        let totalCostItem2 = priceItem2 * quantityItem2;
+
+        
+        let subtotal = totalCostItem1 + totalCostItem2;
+
+        let totalCost = subtotal + shippingCharges;
+
+        document.write("<p>Price of item 1: " + priceItem1 + " PKR</p>");
+        document.write("<p>Price of item 2: " + priceItem2 + " PKR</p>");
+        document.write("<p>Quantity of item 1: " + quantityItem1 + "</p>");
+        document.write("<p>Quantity of item 2: " + quantityItem2 + "</p>");
+        document.write("<p>Shipping charges: " + shippingCharges + " PKR</p>");
+        document.write("<br>");
+        document.write("<p>Total cost: " + totalCost + " PKR</p>");
+    </script>
+</body>
+</html>
